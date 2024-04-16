@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 import { Calendar as BigCalendar, momentLocalizer } from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import moment from 'moment';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 
 const localizer = momentLocalizer(moment);
 
 const Calendar = () => {
   const [events, setEvents] = useState([]);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate(); // Initializing useNavigate
 
-  // Example data for demonstration
   const initialEvents = [
     {
       id: 1,
@@ -27,7 +26,7 @@ const Calendar = () => {
   ];
 
   useState(() => {
-    // Set initial events
+    // Setting initial events
     setEvents(initialEvents);
   }, []);
 
@@ -41,7 +40,7 @@ const Calendar = () => {
         end: slotInfo.end,
       };
       setEvents([...events, newEvent]);
-      navigate('/partner-discovery'); // Navigate to partner page after adding event
+      navigate('/partner-discovery');
     }
   };
 

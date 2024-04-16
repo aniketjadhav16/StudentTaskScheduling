@@ -8,9 +8,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Perform authentication logic here
     if (email === 'user@example.com' && password === 'password') {
-      // Redirect to scheduling calendar page after successful login
       navigate('/calendar');
     } else {
       alert('Invalid email or password. Please try again.');

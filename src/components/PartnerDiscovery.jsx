@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const PartnerDiscovery = () => {
   const [partners, setPartners] = useState([]);
 
-  // Dummy data for demonstration
+  //Dummy data
   const dummyPartners = [
     { id: 1, name: 'John Doe', location: 'New York', interests: ['Mathematics', 'Physics'] },
     { id: 2, name: 'Jane Smith', location: 'Los Angeles', interests: ['Biology', 'Chemistry'] },
@@ -11,7 +11,6 @@ const PartnerDiscovery = () => {
   ];
 
   useState(() => {
-    // Set initial partners
     setPartners(dummyPartners);
   }, []);
 

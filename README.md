@@ -1,4 +1,4 @@
-# Student Management System and Study Partner Finder
+# Student Task Scheduling System and Study Partner Finder
 
 ## Project Overview
 

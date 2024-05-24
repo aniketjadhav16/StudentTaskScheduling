@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
 import Calendar from './components/Calendar';
 import PartnerDiscovery from './components/PartnerDiscovery';
+import './App.css'
 
 const App = () => {
   return (

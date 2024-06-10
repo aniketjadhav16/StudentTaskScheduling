@@ -16,7 +16,7 @@ const Login = () => {
     }
   };
 
-  const companyName = 'StudySync'
+  const companyName = 'Task Scheduler'
   const companySlogan = 'Your ultimate study planner and partner finder.'
 
   return (
